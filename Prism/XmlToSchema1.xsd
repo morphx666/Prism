@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="prism">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="projects">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="project">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="description" />
+                    <xs:element name="fileName" type="xs:string" />
+                    <xs:element name="resolution" type="xs:string" />
+                    <xs:element name="tracks">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="track">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="name" type="xs:string" />
+                                <xs:element name="description" />
+                                <xs:element name="shortcutKey" type="xs:string" />
+                                <xs:element name="layers">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="layer">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="name" type="xs:string" />
+                                            <xs:element name="visible" type="xs:boolean" />
+                                            <xs:element name="elements">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element maxOccurs="unbounded" name="element">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="description" type="xs:string" />
+                                                        <xs:element name="duration" type="xs:unsignedInt" />
+                                                        <xs:element name="sourceFile" type="xs:string" />
+                                                        <xs:element name="fadeIn">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="type" type="xs:string" />
+                                                              <xs:element name="mode" type="xs:string" />
+                                                              <xs:element name="duration" type="xs:unsignedByte" />
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="fadeOut">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="type" type="xs:string" />
+                                                              <xs:element name="mode" type="xs:string" />
+                                                              <xs:element name="duration" type="xs:unsignedByte" />
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="loop">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="enabled" type="xs:boolean" />
+                                                              <xs:element name="from" type="xs:unsignedByte" />
+                                                              <xs:element name="to" type="xs:unsignedByte" />
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="keyFrames">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="keyframe">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element name="description" type="xs:string" />
+                                                                    <xs:element name="time" type="xs:unsignedInt" />
+                                                                    <xs:element name="chromaKeyColor">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence>
+                                                                          <xs:element name="Red">
+                                                                            <xs:complexType>
+                                                                              <xs:sequence>
+                                                                                <xs:element name="intRange">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                      <xs:element name="min" type="xs:unsignedByte" />
+                                                                                      <xs:element name="max" type="xs:unsignedByte" />
+                                                                                    </xs:sequence>
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                              </xs:sequence>
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                          <xs:element name="Blue">
+                                                                            <xs:complexType>
+                                                                              <xs:sequence>
+                                                                                <xs:element name="intRange">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                      <xs:element name="min" type="xs:unsignedByte" />
+                                                                                      <xs:element name="max" type="xs:unsignedByte" />
+                                                                                    </xs:sequence>
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                              </xs:sequence>
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                          <xs:element name="Green">
+                                                                            <xs:complexType>
+                                                                              <xs:sequence>
+                                                                                <xs:element name="intRange">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                      <xs:element name="min" type="xs:unsignedByte" />
+                                                                                      <xs:element name="max" type="xs:unsignedByte" />
+                                                                                    </xs:sequence>
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                              </xs:sequence>
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                          <xs:element name="enabled" type="xs:boolean" />
+                                                                        </xs:sequence>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="foreColor">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence>
+                                                                          <xs:element name="brush2">
+                                                                            <xs:complexType>
+                                                                              <xs:sequence>
+                                                                                <xs:element name="color1" type="xs:int" />
+                                                                                <xs:element name="point1" type="xs:string" />
+                                                                                <xs:element name="color2" type="xs:int" />
+                                                                                <xs:element name="point2" type="xs:string" />
+                                                                                <xs:element name="type" type="xs:string" />
+                                                                                <xs:element name="smoothing" type="xs:decimal" />
+                                                                              </xs:sequence>
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                        </xs:sequence>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="backColor">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence>
+                                                                          <xs:element name="brush2">
+                                                                            <xs:complexType>
+                                                                              <xs:sequence>
+                                                                                <xs:element name="color1" type="xs:int" />
+                                                                                <xs:element name="point1" type="xs:string" />
+                                                                                <xs:element name="color2" type="xs:byte" />
+                                                                                <xs:element name="point2" type="xs:string" />
+                                                                                <xs:element name="type" type="xs:string" />
+                                                                                <xs:element name="smoothing" type="xs:decimal" />
+                                                                              </xs:sequence>
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                        </xs:sequence>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="font">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence>
+                                                                          <xs:element name="family" type="xs:string" />
+                                                                          <xs:element name="size" type="xs:unsignedByte" />
+                                                                          <xs:element name="style" type="xs:string" />
+                                                                        </xs:sequence>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="bounds" type="xs:string" />
+                                                                    <xs:element name="borderColor" type="xs:int" />
+                                                                    <xs:element name="borderSize" type="xs:unsignedByte" />
+                                                                    <xs:element name="borderRadius" type="xs:unsignedByte" />
+                                                                    <xs:element name="rotation" type="xs:unsignedByte" />
+                                                                    <xs:element name="contentAlignment" type="xs:string" />
+                                                                    <xs:element name="padding" type="xs:string" />
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="propietary">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element minOccurs="0" name="format" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="fromTime">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element name="timerTime">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence>
+                                                                          <xs:element name="year" type="xs:unsignedByte" />
+                                                                          <xs:element name="month" type="xs:unsignedByte" />
+                                                                          <xs:element name="day" type="xs:unsignedByte" />
+                                                                          <xs:element name="hour" type="xs:unsignedByte" />
+                                                                          <xs:element name="minute" type="xs:unsignedByte" />
+                                                                          <xs:element name="second" type="xs:unsignedByte" />
+                                                                          <xs:element name="millisecond" type="xs:unsignedByte" />
+                                                                        </xs:sequence>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                              <xs:element minOccurs="0" name="toTime">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element name="timerTime">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence>
+                                                                          <xs:element name="year" type="xs:unsignedByte" />
+                                                                          <xs:element name="month" type="xs:unsignedByte" />
+                                                                          <xs:element name="day" type="xs:unsignedByte" />
+                                                                          <xs:element name="hour" type="xs:unsignedByte" />
+                                                                          <xs:element name="minute" type="xs:unsignedByte" />
+                                                                          <xs:element name="second" type="xs:unsignedByte" />
+                                                                          <xs:element name="millisecond" type="xs:unsignedByte" />
+                                                                        </xs:sequence>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                              <xs:element minOccurs="0" name="shapeType" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="sides" type="xs:unsignedByte" />
+                                                              <xs:element minOccurs="0" name="text" />
+                                                              <xs:element minOccurs="0" name="allowWrapping" type="xs:boolean" />
+                                                              <xs:element minOccurs="0" name="speed" type="xs:unsignedByte" />
+                                                              <xs:element minOccurs="0" name="directionConstants" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="zoomMode" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="mode" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="timeFormat" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="dateFormat" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="showTime" type="xs:boolean" />
+                                                              <xs:element minOccurs="0" name="showDate" type="xs:boolean" />
+                                                              <xs:element minOccurs="0" name="showSeconds" type="xs:boolean" />
+                                                              <xs:element minOccurs="0" name="flashSecondsSeparator" type="xs:boolean" />
+                                                              <xs:element minOccurs="0" name="customTimeFormat" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="customDateFormat" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="arrangement" type="xs:string" />
+                                                              <xs:element minOccurs="0" name="analogBorderColor" type="xs:int" />
+                                                              <xs:element minOccurs="0" name="analogBackgroundColor" type="xs:int" />
+                                                              <xs:element minOccurs="0" name="analogHoursTicksColor" type="xs:int" />
+                                                              <xs:element minOccurs="0" name="analogHoursNeedleColor" type="xs:byte" />
+                                                              <xs:element minOccurs="0" name="analogMinutesNeedleColor" type="xs:byte" />
+                                                              <xs:element minOccurs="0" name="analogSecondsNeedleColor" type="xs:byte" />
+                                                              <xs:element minOccurs="0" name="volume" type="xs:unsignedByte" />
+                                                              <xs:element minOccurs="0" name="balance" type="xs:unsignedByte" />
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="type" type="xs:string" use="required" />
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

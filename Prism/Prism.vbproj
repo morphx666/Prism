@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83CD044F-B9B1-4981-9320-C6A4597B36B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Prism.My.MyApplication</StartupObject>
+    <RootNamespace>Prism</RootNamespace>
+    <AssemblyName>Prism</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Prism.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DefineConstants>Win32 = True</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Prism.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <DefineConstants>Win32 = True</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Prism.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Prism.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Prism.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Prism.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <DefineConstants>USE_BITBLT=0</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\PrismHD256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\ThirdParty\AForge.NET\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\..\ThirdParty\AForge.NET\Release\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>..\..\ThirdParty\AForge.NET\Release\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\ThirdParty\AForge.NET\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Helpers\DirectBitmap.vb" />
+    <Compile Include="Controls\UIElements\ColorWheel.Designer.vb">
+      <DependentUpon>ColorWheel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UIElements\ColorWheel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RenderTrackScene.Designer.vb">
+      <DependentUpon>RenderTrackScene.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RenderTrackScene.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ColorSpace.vb" />
+    <Compile Include="Controls\TypeEditors\ColorEditorUI.Designer.vb">
+      <DependentUpon>ColorEditorUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TypeEditors\ColorEditorUI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UIElements\Slider.Designer.vb">
+      <DependentUpon>Slider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UIElements\Slider.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormEditTimeLineProperties.Designer.vb">
+      <DependentUpon>FormEditTimeLineProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditTimeLineProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainRenderer.Designer.vb">
+      <DependentUpon>FormMainRenderer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainRenderer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProjectProperties.Designer.vb">
+      <DependentUpon>FormProjectProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormProjectProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeGlobals.vb" />
+    <Compile Include="Classes\Element\Elements\ElementImageSequence.vb" />
+    <Compile Include="Classes\Element\Elements\ElementShape.vb" />
+    <Compile Include="Classes\Element\Elements\ElementTimer.vb" />
+    <Compile Include="Classes\Element\WavePeaks.vb" />
+    <Compile Include="Classes\Helpers\CustomCursors.vb" />
+    <Compile Include="Classes\Helpers\GraphicsExtension.vb" />
+    <Compile Include="Classes\Element\Brush2.vb" />
+    <Compile Include="Classes\Element\Element.vb" />
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Element\Elements\ElementAudio.vb" />
+    <Compile Include="Classes\Element\Elements\ElementClock.vb" />
+    <Compile Include="Classes\Element\Elements\ElementMarquee.vb" />
+    <Compile Include="Classes\Element\Elements\ElementImage.vb" />
+    <Compile Include="Classes\Element\Elements\ElementText.vb" />
+    <Compile Include="Classes\Element\Elements\ElementVideo.vb" />
+    <Compile Include="Classes\Element\IElement.vb" />
+    <Compile Include="Classes\Element\KeyFramesCollection.vb" />
+    <Compile Include="Classes\Helpers\TextRenderer.vb" />
+    <Compile Include="Classes\Layer.vb" />
+    <Compile Include="Classes\Element\KeyFrame.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Classes\Project.vb" />
+    <Compile Include="Classes\Track.vb" />
+    <Compile Include="Controls\RenderTimeline.Designer.vb">
+      <DependentUpon>RenderTimeline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RenderTimeline.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RenderTrack.Designer.vb">
+      <DependentUpon>RenderTrack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RenderTrack.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RenderTracks.Designer.vb">
+      <DependentUpon>RenderTracks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RenderTracks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\UIElements\ColorWheel.resx">
+      <DependentUpon>ColorWheel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RenderTrackScene.resx">
+      <DependentUpon>RenderTrackScene.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UIElements\Slider.resx">
+      <DependentUpon>Slider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TypeEditors\ColorEditorUI.resx">
+      <DependentUpon>ColorEditorUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditTimeLineProperties.resx">
+      <DependentUpon>FormEditTimeLineProperties.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainRenderer.resx">
+      <DependentUpon>FormMainRenderer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProjectProperties.resx">
+      <DependentUpon>FormProjectProperties.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RenderTimeline.resx">
+      <DependentUpon>RenderTimeline.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RenderTrack.resx">
+      <DependentUpon>RenderTrack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RenderTracks.resx">
+      <DependentUpon>RenderTracks.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="XmlToSchema1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knob_sel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knob_unsel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Prism.ico" />
+    <Content Include="PrismHD.ico" />
+    <None Include="Resources\PrismHD256.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Video.DirectShow\Video.DirectShow.csproj">
+      <Project>{26cd2ce7-ff63-4669-83b0-7d9c8f3408ee}</Project>
+      <Name>Video.DirectShow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
