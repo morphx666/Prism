@@ -1,9 +1,8 @@
 ﻿Imports System
 Imports System.Drawing
-Imports Drawing2D
+Imports System.Drawing.Drawing2D
 Imports System.Runtime.InteropServices
 Imports System.Runtime.CompilerServices
-Imports System.Drawing.Drawing2D
 
 Public Module GraphicsExtension
     Private Const Rad2Deg As Double = 180 / Math.PI

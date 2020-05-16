@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prism>
+  <projects>
+    <project>
+      <name>Audio Test</name>
+      <description></description>
+      <fileName>E:\Documents\Visual Studio 2013\Projects\Prism\Prism\bin\Sample Projects\AudioTest.pprj</fileName>
+      <resolution>{Width=1280, Height=1024}</resolution>
+      <tracks>
+        <track>
+          <name>New Track 01</name>
+          <description></description>
+          <shortcutKey>None</shortcutKey>
+          <layers>
+            <layer>
+              <name>New Layer 01</name>
+              <visible>true</visible>
+              <elements>
+                <element type="Audio">
+                  <description>Audio</description>
+                  <duration>281010</duration>
+                  <sourceFile>C:\Users\Xavier\Desktop\Freestyle - Dont Stop The Rock [Fast Foot Remix 2010].mp3</sourceFile>
+                  <fadeIn>
+                    <type>Instant</type>
+                    <mode>FadeIn</mode>
+                    <duration>0</duration>
+                  </fadeIn>
+                  <fadeOut>
+                    <type>Instant</type>
+                    <mode>FadeOut</mode>
+                    <duration>0</duration>
+                  </fadeOut>
+                  <loop>
+                    <enabled>false</enabled>
+                    <from>0</from>
+                    <to>0</to>
+                  </loop>
+                  <keyFrames>
+                    <keyframe>
+                      <description>Initial Conditions</description>
+                      <time>0</time>
+                      <chromaKeyColor>
+                        <Red>
+                          <intRange>
+                            <min>0</min>
+                            <max>255</max>
+                          </intRange>
+                        </Red>
+                        <Blue>
+                          <intRange>
+                            <min>0</min>
+                            <max>255</max>
+                          </intRange>
+                        </Blue>
+                        <Green>
+                          <intRange>
+                            <min>0</min>
+                            <max>255</max>
+                          </intRange>
+                        </Green>
+                        <enabled>false</enabled>
+                      </chromaKeyColor>
+                      <foreColor>
+                        <brush2>
+                          <color1>-16777216</color1>
+                          <point1>{X=0,Y=0}</point1>
+                          <color2>-16777216</color2>
+                          <point2>{X=0,Y=0}</point2>
+                          <type>Solid</type>
+                          <smoothing>0.5</smoothing>
+                        </brush2>
+                      </foreColor>
+                      <backColor>
+                        <brush2>
+                          <color1>-1</color1>
+                          <point1>{X=0,Y=0}</point1>
+                          <color2>-1</color2>
+                          <point2>{X=0,Y=0}</point2>
+                          <type>Solid</type>
+                          <smoothing>0.5</smoothing>
+                        </brush2>
+                      </backColor>
+                      <font>
+                        <family>Arial</family>
+                        <size>12</size>
+                        <style>Regular</style>
+                      </font>
+                      <bounds>{X=0,Y=462,Width=200,Height=100}</bounds>
+                      <borderColor>-16777216</borderColor>
+                      <borderSize>0</borderSize>
+                      <borderRadius>0</borderRadius>
+                      <rotation>0</rotation>
+                      <contentAlignment>MiddleCenter</contentAlignment>
+                      <padding>{Left=0,Top=0,Right=0,Bottom=0}</padding>
+                    </keyframe>
+                  </keyFrames>
+                  <propietary>
+                    <volume>0</volume>
+                    <balance>0</balance>
+                  </propietary>
+                </element>
+              </elements>
+            </layer>
+          </layers>
+        </track>
+      </tracks>
+    </project>
+  </projects>
+</prism>

@@ -259,3 +259,16 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Include Sample Projects
+!**/bin/
+
+**/bin/*.dll
+**/bin/*.xml
+**/bin/*.exe
+**/bin/*.config
+**/bin/*.manifest
+
+!**/*/Sample Projects/
+/Prism/bin/Sample Projects/Sequences [DELETED 3.28GB]/Thumbs.db
+/Prism/bin/Sample Projects/Sequences [DELETED 3.28GB]/Thumbs.db
